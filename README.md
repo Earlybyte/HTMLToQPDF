@@ -69,3 +69,9 @@ You can use [HTMLToQPDF.Example](https://github.com/Earlybyte/HTMLToQPDF/release
     <td><img src="https://user-images.githubusercontent.com/26045342/195960936-6f014456-a074-4672-aa39-03cdcdcc3afc.png" /></td>
  </tr>
 </table>
+
+#### Publish on nuget
+
+1. Update version in `HTMLToQPDF.csproj`
+2. Create the package `cd ./HTMLToQPDF/ && dotnet pack && cd ..`
+3. Upload to nuget via `dotnet nuget push HTMLToQPDF/bin/Debug/Earlybyte.QuestPDF.HTML.0.0.0.nupkg --api-key <API-KEY> --source https://api.nuget.org/v3/index.json`
